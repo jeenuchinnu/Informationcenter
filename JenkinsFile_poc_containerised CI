@@ -8,7 +8,7 @@ pipeline {
             
             steps {
 			   
-                git credentialsId: 'GitHub', url: 'https://github.com/poojasree/InformationCentre.git'
+                git credentialsId: 'GitHub', url: 'https://github.com/Tonyamoljose/InformationCentre.git'
                 sh 'mvn clean install'
             }
          }
@@ -19,7 +19,7 @@ pipeline {
             
             steps {
                 
-                sh 'curl -u build_user:build_pwd --upload-file "$WORKSPACE/target/InformationCentre.war" http://52.173.28.7:8081/repository/maven-releases/POC3TEAMC/InformationCentre/$BUILD_NUMBER/InformationCentre-$BUILD_NUMBER.war'
+                sh 'curl -u build_user:build_pwd --upload-file "$WORKSPACE/target/InformationCentre.war" http://168.61.41.186:8081/repository/maven-releases/POC3TEAMC/InformationCentre/$BUILD_NUMBER/InformationCentre-$BUILD_NUMBER.war'
             }
          }
         

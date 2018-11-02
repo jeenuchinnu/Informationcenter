@@ -6,7 +6,7 @@
         "value": "azureuser" 
       }, 
       "sshKeyData": { 
-        "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChU/+34id55reGNln3vwnpMt/9OrtSgTh0HwJhuYVcorju1ebsmnGrjtWLM2r5NPHdL3jMNNCAURKrg3277AeXyXPyvjo1Y/TuUWIuy6npdcUZURvowAK5FXCG54/6WGdmT5+u8CcI5oG0V864WJ07h5fqvKQUhAzY//N5Sms2a0doTajLsfas+zyDk+DXuw2bg376o9lKWIg/KvA4Nw2wPD6S+M50vH+iMwZLaQwgdqdzPexGD/uVG08a9egpr/0GzxFPYJTuJ9EmDNVXWM6kv10xmGa0tDcwdkYIBrOBbzcI+jbVpUZcUlcwICKk7cAMl7krXm+t1g/F8QhvOsRN ansiblepoc@ANsiblePOC" 
+        "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDCxszM6QTisGhTlRHrslDmcI2/b5VEo8VSqYOGJ2+fJOxM+ImxPx1FXAgp7jbeDNXxPXhOtNbbXeFUaIHZfvlOPiovYlqAT9ArMW71/8OXWyvVyZfrPkvRPtwffYeE9zge2CTmirgzUs8v2iKumaiQH0Rk8m2HQcTvybv3jsst5ATxJ5fTXayJdKHybIoWxjVyxtRaadKZLp/be9Pod0EHu05jBRr1e9T1U8eQOt7N9ewtCpt8CqSpeM8git0Rlpgiobik5PM/43uwJDHV/I2T+FhX5lq2JKFXfu5pUUnr0m1EELyZm3HJM4dcz4q9sKiQcKJB2LvWsCfe3E7MV+YP engdop@Ansible-POC"
       } 
     } 
   } 

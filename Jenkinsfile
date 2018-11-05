@@ -5,7 +5,7 @@ pipeline {
 		 agent {docker { image 'maven' } }             
             steps {		
                  git credentialsId: 'GitHub', url: 'https://github.com/Tonyamoljose/InformationCenter.git'
-                sh 'mvn -X clean deploy'      
+                sh 'mvn -X clean deploy  -Dmaven.test.skip=true'      
             }
         } 
          

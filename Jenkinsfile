@@ -3,7 +3,7 @@ pipeline {
     stages {
          stage('Build') {
 		 agent {docker { image 'maven' 
-		 args '-v ${HOME}/.m2:/data/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven1/conf'
+		 args '-v $HOME/.m2:/root/.m2:z -u root'
 			       } }
             steps {		
                  git credentialsId: 'GitHub', url: 'https://github.com/Tonyamoljose/InformationCenter.git'

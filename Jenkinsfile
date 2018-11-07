@@ -7,7 +7,7 @@ pipeline {
 			       } }
             steps {		
                  git credentialsId: 'GitHub', url: 'https://github.com/Tonyamoljose/InformationCenter.git'
-                sh 'mvn -X clean deploy  -Dmaven.test.skip=true'      
+                sh 'mvn clean deploy  -Dmaven.test.skip=true'      
             }
         } 
          

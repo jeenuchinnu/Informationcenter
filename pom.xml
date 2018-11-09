@@ -19,27 +19,26 @@
         <version>2.46.0</version>
     </dependency>
     <dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>servlet-api</artifactId>
-    <version>2.5</version>
-    <scope>provided</scope>
-</dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <distributionManagement>
     <snapshotRepository>
          <id>nexus</id>
          <url>http://137.117.97.207:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
-               <repository>
-         <id>nexus</id>
-         <url>http://137.117.97.2079:8081/repository/maven-releases/</url>
-		       
-               </repository>
+    <repository>
+        <id>nexus</id>
+        <url>http://137.117.97.2079:8081/repository/maven-releases/</url>
+    </repository>
   </distributionManagement>
-	<properties>
-<maven.compiler.source>6</maven.compiler.source>
-<maven.compiler.target>1.6</maven.compiler.target>
- </properties>
+  <properties>
+       <maven.compiler.source>6</maven.compiler.source>
+       <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
 
   <build>
     <finalName>InformationCentre</finalName>
@@ -65,6 +64,25 @@
 		    </includes>
 		    </configuration>
 	      </plugin>
+	      <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.9</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin> 
       </plugins>
   </build>
 </project>

@@ -1,5 +1,11 @@
 pipeline 
   {
+    environment 
+       {
+          registry = 'tonyamoljose/ansible_poc'
+          registryCredential = 'dockerhub'
+          dockerImage = ''
+                }
     agent none
     stages 
        {
@@ -17,5 +23,14 @@ pipeline
                         sh 'mvn clean deploy sonar:sonar'      
                     }
             }
+         stage('Building image') 
+            {
+               steps
+		   {
+                      script {
+                              docker.build registry + ":$BUILD_NUMBER"
+                             }
+                   }
+            }	  
        }
    }

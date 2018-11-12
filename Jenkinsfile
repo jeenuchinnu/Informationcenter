@@ -1,6 +1,6 @@
 pipeline {
     environment {
-                  registry = “tonyamoljose + ansible_poc”
+                  registry = “tonyamoljose/ansible_poc”
                   registryCredential = "dockerhub"
                   dockerImage = ""
                 }

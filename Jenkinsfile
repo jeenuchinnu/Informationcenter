@@ -5,7 +5,7 @@ pipeline
           registry = 'tonyamoljose/ansible_poc'
           registryCredential = 'dockerhub'
           dockerImage = ''
-                }
+       }
     agent none
     stages 
        {
